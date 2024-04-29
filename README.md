@@ -21,13 +21,13 @@ Training and validation DataGenerators are created using flow_from_directory whi
 
 ### Model Architecture
 A CNN architecture is defined using the Keras functional API:
-
+```
 1)Convolutional layers with ReLU activation for feature extraction.
 2)Max pooling layers for dimensionality reduction.
 3)Flatten layer to convert the extracted features into a 1D vector.
 4)Dense layers with ReLU activation for classification.
 5)Sigmoid activation in the output layer for binary classification (normal vs. pneumonia).
-
+```
 
 ### Model Training
 The model is compiled with a binary cross-entropy loss function, Adam optimizer, and accuracy metric.
